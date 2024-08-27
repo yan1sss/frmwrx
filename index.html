@@ -7,43 +7,87 @@
     <title>Formworks</title>
     <style>
         body {
-            font-family: monospace; /* Default font for code */
-            background-color: #f8f8f8;
-            color: #333;
-            margin: 20px;
-            line-height: 1; /* Decreased line spacing */
+            margin: 0;
+            font-family: 'Roboto Mono', monospace;
+            position: relative;
         }
-        h1 {
-            font-size: 1.5rem; /* Decreased text size */
-            margin: 0 0 10px 0; /* Removed left margin */
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 12px;
+            position: absolute;
+            width: 415px;
+            height: 70px;
+            left: 12px;
+            top: 12px;
         }
-        p {
-            font-size: 0.75rem; /* Decreased text size */
-            margin: 0; /* Removed margin to align text */
+
+        .frame20 {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            gap: 4px;
+            width: 415px;
+            height: 40px;
+            flex: none;
+            order: 0;
+            align-self: stretch;
+            flex-grow: 0;
         }
-        .contacts {
-            margin-top: 10px; /* Adjusted for decreased line spacing */
-            font-size: 0.75rem; /* Decreased text size */
+
+        .title, .subtitle, .link {
+            width: 415px;
+            height: 18px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 18px;
+            letter-spacing: -0.05em;
+            color: #000000;
+            flex: none;
+            align-self: stretch;
+            flex-grow: 0;
         }
-        .contacts p {
-            margin: 0; /* Ensure no margin for perfect alignment */
-            display: inline-block; /* Ensures they stay on the same line */
+
+        .links-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 16px;
+            width: 249px;
+            height: 18px;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
         }
-        .contacts a {
-            color: blue; /* Links are blue */
-            text-decoration: none; /* No underline on hover or default */
-            margin-right: 10px; /* Adds space between links */
+
+        .link {
+            color: #0000FF;
         }
     </style>
 </head>
 <body>
-    <h1>formworks</h1>
-    <p>We do websites and apps</p>
-    <div class="contacts">
-        <p>
-            <a href="mailto:ivan@frmwrx.com">ivan@frmwrx.com</a>
-            <a href="https://www.are.na" target="_blank">are.na</a>
-        </p>
+     <!-- Spline embed code for background -->
+    <iframe src="https://my.spline.design/13studiopreview3d-784975673cc8fc43adc91f43f1e5cba2/" 
+            frameborder="0" class="spline-background"></iframe>
+            
+    <div class="container">
+        <!-- Frame 20 -->
+        <div class="frame20">
+            <div class="title">formworks</div>
+            <div class="subtitle">We do websites and apps</div>
+        </div>
+
+        <!-- Frame 21 -->
+        <div class="links-container">
+            <a href="mailto:ivan@frmwrx.com" class="link">ivan@frmwrx.com</a>
+            <a href="https://www.are.na" class="link" target="_blank">are.na</a>
+        </div>
     </div>
 </body>
 </html>
