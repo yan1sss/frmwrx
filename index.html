@@ -12,7 +12,6 @@
             margin: 0;
             font-family: 'Roboto Mono', monospace;
             position: relative;
-            overflow: hidden; /* Prevents scrolling */
         }
 
         /* Style for the Spline background */
@@ -87,8 +86,9 @@
 </head>
 <body>
 
-    <!-- Spline background -->
-    <iframe id="spline-background" src="https://my.spline.design/13studiopreview3d-784975673cc8fc43adc91f43f1e5cba2/" frameborder="0"></iframe>
+    <!-- Spline background with script embed method -->
+    <div id="spline-background"></div>
+    <script src="https://my.spline.design/13studiopreview3d-784975673cc8fc43adc91f43f1e5cba2/script.js"></script>
 
     <div class="container">
         <!-- About -->
