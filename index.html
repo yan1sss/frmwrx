@@ -21,6 +21,18 @@
             height: 100%;
         }
 
+        #spline-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            /* Places the Spline scene behind other content */
+            border: none;
+            /* Removes iframe border */
+        }
+
         canvas {
             position: absolute;
             top: 0;
@@ -93,8 +105,8 @@
 </head>
 
 <body>
-    <canvas data-spline="https://prod.spline.design/G11ZJmo3jZGboocc/scene.splinecode"></canvas>
-
+    <!-- <canvas data-spline="https://prod.spline.design/G11ZJmo3jZGboocc/scene.splinecode"></canvas> -->
+    <iframe id="spline-background" src="https://my.spline.design/13studiopreview3d-784975673cc8fc43adc91f43f1e5cba2/" frameborder="0" allow="fullscreen" loading="lazy"></iframe>
     <div class="container">
         <div class="about">
             <div class="title">FORMWORKS STUDIO</div>
@@ -104,7 +116,7 @@
             <a href="mailto:hello@frmwrx.com" class="link">hello@frmwrx.com</a>
         </div>
     </div>
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
 </body>
 
 </html>
