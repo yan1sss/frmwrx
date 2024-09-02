@@ -1,0 +1,4 @@
+*.js
+!app.js
+!webpack.config.js
+node_modules

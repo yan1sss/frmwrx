@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Formworks</title>
     <style>
+        html {
+            height: 100%;
+        }
+
         body {
             margin: 0;
             font-family: 'Roboto Mono', monospace;
             position: relative;
             overflow: hidden;
+            height: 100%;
         }
 
-        /* Style for the Spline background */
-        #spline-background {
+        canvas {
             position: absolute;
             top: 0;
             left: 0;
-            width: 100vw;
-            height: 100vh;
-            z-index: -1; /* Places the Spline scene behind other content */
-            border: none; /* Removes iframe border */
+            z-index: -1;
+            border: none;
         }
 
         .container {
@@ -37,7 +40,7 @@
             height: 70px;
             left: 12px;
             top: 12px;
-            z-index: 1; /* Ensures content is above the Spline scene */
+            z-index: 1;
         }
 
         .frame20 {
@@ -54,7 +57,9 @@
             flex-grow: 0;
         }
 
-        .title, .subtitle, .link {
+        .title,
+        .subtitle,
+        .link {
             width: 415px;
             height: 18px;
             font-style: normal;
@@ -86,22 +91,20 @@
         }
     </style>
 </head>
+
 <body>
-    <!-- Spline background using an iframe -->
-    <iframe id="spline-background" src="https://my.spline.design/13studiopreview3d-784975673cc8fc43adc91f43f1e5cba2/" frameborder="0" allow="fullscreen" loading="lazy"></iframe>
+    <canvas data-spline="https://prod.spline.design/G11ZJmo3jZGboocc/scene.splinecode"></canvas>
 
     <div class="container">
-        <!-- About -->
         <div class="about">
             <div class="title">FORMWORKS STUDIO</div>
             <div class="subtitle">We do websites and apps</div>
         </div>
-
-        <!-- Links -->
         <div class="links-container">
             <a href="mailto:hello@frmwrx.com" class="link">hello@frmwrx.com</a>
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
-</html>
 
+</html>
