@@ -8,8 +8,14 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>formworks</title>
-    <!-- Import Roboto Mono Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet" />
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="FORMWORKS | We do websites and apps" />
+    <meta property="og:description" content="10+ combined years of creating digital products allow us to easily navigate complexity. We work with businesses that disrupt markets, scale consistently, and require elegant solutions to grow. Drop us a line to discuss what we can do for you." />
+    <meta property="og:image" content="https://raw.githubusercontent.com/yan1sss/frmwrx/main/OPENGRAPH.png" />
+    <meta property="og:url" content="https://www.frmwrx.com/" />
+    <meta property="og:site_name" content="frmwrx" />
+    <meta property="og:locale" content="en_US" />
     <style>
         html {
             height: 100%;
@@ -30,7 +36,9 @@
             width: 100vw;
             height: 100vh;
             z-index: -1;
+            /* Places the Spline scene behind other content */
             border: none;
+            /* Removes iframe border */
         }
 
         canvas {
@@ -49,59 +57,75 @@
             gap: 12px;
             position: absolute;
             width: 415px;
-            height: auto;
+            height: 70px;
             left: 12px;
             top: 12px;
             z-index: 1;
         }
 
-        .about {
+        .frame20 {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            gap: 4px;
-        }
-
-        .projects-container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
             padding: 0px;
             gap: 4px;
-
             width: 415px;
-            height: auto;
-
+            height: 40px;
             flex: none;
-            order: 2;
+            order: 0;
             align-self: stretch;
             flex-grow: 0;
         }
 
-        .text {
-            font-family: 'Roboto Mono', monospace;
+        .title,
+        .subtitle,
+        .link {
+            width: 415px;
+            height: 18px;
             font-style: normal;
             font-weight: 400;
             font-size: 14px;
             line-height: 18px;
             letter-spacing: -0.05em;
             color: #000000;
-        }
-
-        .link {
-            font-family: 'Roboto Mono', monospace;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 18px;
-            letter-spacing: -0.05em;
-            color: #0000FF;
-            text-decoration: none;
-        }
-
-        .link:hover {
-            text-decoration: underline;
+            flex: none;
+            align-self: stretch;
+            flex-grow: 0;
         }
 
         .links-container {
             display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0px;
+            gap: 16px;
+            width: 249px;
+            height: 18px;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+        }
+
+        .link {
+            color: #0000FF;
+            width: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas data-spline="https://prod.spline.design/G11ZJmo3jZGboocc/scene.splinecode"></canvas>
+    <div class="container">
+        <div class="about">
+            <div class="title">FORMWORKS. A DIGITAL PRODUCTS FIRM</div>
+            <div class="subtitle">We do websites and apps</div>
+        </div>
+        <div class="links-container">
+            <a href="mailto:hello@frmwrx.com" class="link">hello@frmwrx.com</a>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
